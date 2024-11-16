@@ -139,7 +139,7 @@ struct PointLight {
     float radius;
 } ;  
 
-layout(std140, binding=2) uniform Lights {
+layout(std140, binding=2) uniform Lights_bufor {
     vec3 ambient;
     uint n_p_lights;
     PointLight p_light[MAX_POINT_LIGHTS];

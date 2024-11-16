@@ -1,0 +1,1 @@
+Nawiasy na scalę z punktami są konieczne ponieważ rotacja dotyczy zeskalowanych punktów a nie samej skali ( rotacja jest macierzą, a mnożenie macierzy nie jest przemienne)

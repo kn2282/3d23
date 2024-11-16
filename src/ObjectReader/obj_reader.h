@@ -8,7 +8,7 @@
 #include <vector>
 #include <array>
 
-#include "spdlog/spdlog.h"
+//#include "spdlog/spdlog.h"
 #include "glm/glm.hpp"
 
 #include "Geometry/bounding_box.h"
@@ -29,7 +29,6 @@ namespace xe {
         bool has_texcoord[3];
     };
 
-
-    xe::sMesh load_smesh_from_obj(std::string name, std::string mtl_base_dir);
+    sMesh load_smesh_from_obj(std::string name, std::string mtl_base_dir);
 }
 

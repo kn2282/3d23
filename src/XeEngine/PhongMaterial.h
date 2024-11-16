@@ -29,12 +29,19 @@ namespace xe {
 
         void unbind() override;
 
+        static void set_ambient(const glm::vec3 ambient) {
+            glUseProgram(program());
+            glUniform3f(uniform_ambient_location_, ambient.x, ambient.y, ambient.z);
+            glUseProgram(0);
+        }
+
 
     private:
 
         static GLuint shader_;
         static GLuint material_uniform_buffer_;
         static GLint uniform_map_Kd_location_;
+        static GLint uniform_ambient_location_;
 
         glm::vec4 Kd_;
         GLuint map_Kd_;

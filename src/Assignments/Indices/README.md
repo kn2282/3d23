@@ -1,0 +1,2 @@
+Usunąłem 2 wierzchołki z 9 przez co zaoszczędziłem 2 x 4 = 8 byte'ów a to jest 23,33% danych w wierzcholków. 
+Można by jeszcze zaoszczędzić więcej gdyby osobno buforować dane wierzchołków dotyczące pozycji i osobno dane wierzchołków dotyczące kolorów.
